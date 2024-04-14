@@ -3,6 +3,7 @@
     --color-brend-dark:#465929;
     --color-primary-light:#FAF4EA;
     --color-primary-dark:#31261A;
+    --color-primari-braun:#A18268;
 }
 /* base */
 body{
@@ -37,7 +38,7 @@ ul{
 .hero-title .accent {
     color: var(--color-brend);
 }
-/* flvanteges section */
+/* avanteges section */
 .advantages-list {
     color: var(--color-primary-light);
     background-color: var(--color-brend);
@@ -47,4 +48,19 @@ ul{
 }
 .section-title .accent{
     color: var(--color-brend-dark);
+}
+.tekst-accent{
+    color: var(--color-brend);
+}
+.article-title{
+    color: var(--color-primary-light);
+}
+.article-tekst{
+    color: var(--color-primary-light);
+}
+.form-title{
+    color: var(--color-brend-dark);
+}
+.copy{
+    color: var(--color-primari-braun);
 }
