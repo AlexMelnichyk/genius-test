@@ -59,6 +59,8 @@ address{
 }
 ul{
     list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
 .section{
     padding: 48px 0px;
@@ -68,6 +70,27 @@ ul{
     width: 100%;
     max-width: 1288px;
     margin: 0 auto;
+}
+/* header */
+.header{
+    background-color: lightgray;
+}
+.header-conteiner{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header-nav{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header-menu{
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
 }
 /* hero-section */
 .hero-section{
@@ -96,7 +119,6 @@ ul{
 }
 .link:hover {
     color: var(--color-brend);
-    font-weight: 600;
 }
 /* hero secton */
 .hero-title {
@@ -113,13 +135,26 @@ ul{
 .tradition-section{
     padding-top: 96px;
 }
+.tradition-container{
+    display: flex;
+    gap: 40px;
+}
+.tradition-content{
+    max-width: 710px;
+}
 .tradition-section-title{
     margin-bottom: 42px;
 }
 /* avanteges section */
-.advantages-list {
-    color: var(--color-primary-light);
+.advantages-section{
     background-color: var(--color-brend);
+}
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 16px;
+    color: var(--color-primary-light);
     font-size: 20px;
     font-weight:300;
     line-height: 1.3;
@@ -156,6 +191,17 @@ ul{
 /* article-section */
 .fofmat-section-title{
     margin-bottom: 80px;
+}
+.format-list{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.format-item{
+    border: 1px solid #31261A;
+    background-color: lightgrey;
+    border-radius: 16px;
+    padding: 24px;
 }
 .article-title{
     color: var(--color-primary-light);
