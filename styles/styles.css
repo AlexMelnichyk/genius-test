@@ -30,6 +30,8 @@
     --color-primary-light:#FAF4EA;
     --color-primary-dark:#31261A;
     --color-primari-braun:#A18268;
+    --color-brand-shadow:#CFCFBC;
+    --color-secondary-dark: #A18268;
 }
 /* base */
 *{
@@ -53,6 +55,7 @@ body{
     font-weight: 400;
     color: var(--color-primary-dark);
     line-height: 1.5;
+    background-color: var(--color-primary-light);
 }
 address{
     font-style: normal;
@@ -94,6 +97,10 @@ ul{
 }
 /* hero-section */
 .hero-section{
+    background-image: url('../images/hero-backgraund.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
     padding: 272px 0px;
 }
 /* button */
@@ -120,7 +127,7 @@ ul{
 .link:hover {
     color: var(--color-brend);
 }
-/* hero secton */
+/* hero section */
 .hero-title {
     margin-bottom: 0px;
     color: var(--color-primary-light);
@@ -164,11 +171,11 @@ ul{
    font-size: 64px;
    font-weight: 900;
 }
+.section-title.centered{
+  text-align: center;  
+}
 .section-title .accent{
     color: var(--color-brend-dark);
-}
-.section-title-alight{
-    text-align: center;
 }
 .section-text{
     font-weight: 400;
@@ -181,7 +188,19 @@ ul{
     text-transform: uppercase;
 }
 .chef-section-title{
-    margin-bottom: 80px;
+    margin: 0 auto 80px;
+}
+.chef-section-title::before,
+.chef-section-title::after {
+    display: block;
+    width: 352px;
+    border: 2px solid var(--color-brand-shadow);
+    content: '';
+}
+.chef-photo{
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0px 0px var(--color-primary-light),
+     -16px 16px 0px 1px var(--color-secondary-dark);
 }
 .shef-name{
     margin-bottom: 16px;
@@ -198,8 +217,11 @@ ul{
     justify-content: space-between;
 }
 .format-item{
+    height: 444px;
+    width: 350px;
     border: 1px solid #31261A;
-    background-color: lightgrey;
+    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%,
+     rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
     border-radius: 16px;
     padding: 24px;
 }
@@ -236,6 +258,13 @@ ul{
     border: 0;
 }
 /* footer */
+.footer{
+    background-image: url('../images/footer-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--color-primary-dark);
+}
 .copy{
     color: var(--color-primari-braun);
 }
