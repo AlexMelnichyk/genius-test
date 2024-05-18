@@ -23,7 +23,7 @@
             <li><a class="link" href="#contacts" target="_self">Контакти</a></li>
           </ul>
         </nav>
-        <button type="button" class="button">Замовити дзвінок</button>
+        <button type="button" class="button modal-btn-open">Замовити дзвінок</button>
       </div>
     </div>
   </header>
@@ -64,21 +64,30 @@
       <div class="container">
         <h2 class="chef-section-title section-title centered">Наші найкращі<br> <span class="accent">шеф-кухарі</span>
         </h2>
-        <article>
-          <img class="chef-photo" src="./images/nastya-shef.jpg" alt="кухар настя тримає круасан на тарілці">
-          <h2 class="shef-name">Настя</h2>
-          <p>Привіт, я Настя!</p>
-          <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
-          <p>Я випечу для вас найсмачніщі вироби!</p>
-        </article>
-        <article>
-          <img class="chef-photo" src="./images/vlad-shef.jpg" alt="кухар влад ліпить вареники">
-          <h2 class="shef-name">Влад</h2>
-          <p>Привіт, я Влад!</p>
-          <p>Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через
-            нашу випічку!</p>
-          <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
-        </article>
+        <ul class="chefs-list">
+          <li class="chefs-item">
+            <article class="chefs-card">
+              <img class="chef-photo" src="./images/nastya-shef.jpg" alt="кухар настя тримає круасан на тарілці">
+              <h2 class="shef-name">Настя</h2>
+              <p>Привіт, я Настя!</p>
+              <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
+              <p>Я випечу для вас найсмачніщі вироби!</p>
+            </article>
+          </li>
+          <li class="chefs-item">
+            <article class="chefs-card">
+              <img class="chef-photo" src="./images/vlad-shef.jpg" alt="кухар влад ліпить вареники">
+              <h2 class="shef-name">Влад</h2>
+              <p>Привіт, я Влад!</p>
+              <p>Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами
+                через
+                нашу випічку!</p>
+              <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+            </article>
+          </li>
+        </ul>
+
+
       </div>
     </section>
     <section class="section" id="format">
@@ -149,46 +158,52 @@
         </iframe>
       </div>
     </section>
-    <main>
-      <footer class="footer">
-        <div class="container">
-          <a href="./index.html">
-            <img src="./images/logo.svg" alt=" Логотип shop bakery">
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <a href="./index.html">
+        <img src="./images/logo.svg" alt=" Логотип shop bakery">
+      </a>
+      <UL>
+        <li><a class="link" href="#tradition" target="_self">Наші традиції</a></li>
+        <li><a class="link" href="#shef" target="_self">Шеф-кухарі</a></li>
+        <li><a class="link" href="#format" target="_self">Формати</a></li>
+        <li><a class="link" href="#contacts" target="_self">Контакти</a></li>
+      </UL>
+      <address>
+        <ul>
+          <li><a class="link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+          <li><a class="link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
+          <li><a class="link" href="https://maps.app.goo.gl/CFUojh8RDQSmtHq96" target="_blank">Україна, м. Київ,
+              вул. Січових Стрільців 54</a></li>
+        </ul>
+      </address>
+      <ul>
+        <li><a class="link" href="https://www.facebook.com/profile.php?id=100007277823537" target="_blank">
+            <svg class="social-icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-facebook">
+              </use>
+            </svg>
           </a>
-          <UL>
-            <li><a class="link" href="#tradition" target="_self">Наші традиції</a></li>
-            <li><a class="link" href="#shef" target="_self">Шеф-кухарі</a></li>
-            <li><a class="link" href="#format" target="_self">Формати</a></li>
-            <li><a class="link" href="#contacts" target="_self">Контакти</a></li>
-          </UL>
-          <address>
-            <ul>
-              <li><a class="link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-              <li><a class="link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
-              <li><a class="link" href="https://maps.app.goo.gl/CFUojh8RDQSmtHq96" target="_blank">Україна, м. Київ,
-                  вул. Січових Стрільців 54</a></li>
-            </ul>
-          </address>
-          <ul>
-            <li><a class="link" href="https://www.facebook.com/profile.php?id=100007277823537" target="_blank">
-                <svg class="social-icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-facebook">
-                  </use>
-                </svg>
-              </a>
-            </li>
-            <li><a class="link" href="https://www.instagram.com/melnichuk2386/?hl=ru" target="_blank">
-                <svg class="social-icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-instagram">
-                  </use>
-                </svg>
-              </a>
-            </li>
-            <li><a class="link" href="#">Політика конфіденційності</a></li>
-            <li class="copy">&copy; Дані захищено</li>
-          </ul>
-      </footer>
-      </div>
+        </li>
+        <li><a class="link" href="https://www.instagram.com/melnichuk2386/?hl=ru" target="_blank">
+            <svg class="social-icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-instagram">
+              </use>
+            </svg>
+          </a>
+        </li>
+        <li><a class="link" href="#">Політика конфіденційності</a></li>
+        <li class="copy">&copy; Дані захищено</li>
+      </ul>
+    </div>
+  </footer>
+  <div class="backdrop is-hidden">
+    <div class="modal">
+      <button class="modal-btn-close" type="button">Close</button>
+    </div>
+  </div>
+  <script src="./modal.js"></script>
 </body>
 
 </html>

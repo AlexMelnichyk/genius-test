@@ -207,15 +207,44 @@ ul{
 .text-uppercase{
     text-transform: uppercase;
 }
+/* chef section*/
 .chef-section-title{
+    position: relative;
     margin: 0 auto 80px;
 }
 .chef-section-title::before,
 .chef-section-title::after {
+    position: absolute;
     display: block;
     width: 352px;
     border: 2px solid var(--color-brand-shadow);
     content: '';
+}
+.chef-section-title::before {
+    left: 0;
+    bottom: 24px;
+}
+.chef-section-title::after{
+    right: 0;
+    bottom: 24px;
+}
+.chefs-list{
+    display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 30px
+}
+.chefs-item{
+
+}
+.chefs-card{
+
 }
 .chef-photo{
     border-radius: 4px 4px 4px 200px;
@@ -279,6 +308,7 @@ ul{
 }
 /* footer */
 .footer{
+    position: relative;
     background-image: url('../images/footer-background.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -293,4 +323,54 @@ ul{
 }
 .copy{
     color: var(--color-primari-braun);
+}
+.footer::before,
+.footer::after{
+    bottom: 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    content: '';
+}
+.footer::before{
+    width: 180px;
+    height: 120px;
+    left: 0;
+    background-image: url('../images/smol-bred.png');
+}
+.footer::after {
+    width: 380px;
+    height: 190px;
+    right: 0;
+    background-image: url('../images/large-bred.png');
+}
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: relative;
+    width: 880px;
+    height: 880px;
+    background-color: var(--color-primary-light);
+    border-radius: 32px;
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
 }
